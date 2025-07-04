@@ -3,13 +3,13 @@ FROM python:3.10-slim
 # Set working directory
 WORKDIR /app
 
-# Copy files from local context into the container
+# Copy files
 COPY . .
 
-# Install dependencies
+# Install requirements
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install F5-TTS in editable mode from local folder
+# Install F5-TTS in editable mode (from local copy)
 RUN pip install -e ./F5-TTS
 
 # Start the handler
