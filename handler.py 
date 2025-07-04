@@ -1,0 +1,5 @@
+# handler.py
+from benchmark import run_benchmark
+
+def handler(event):
+    return run_benchmark()

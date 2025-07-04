@@ -1,0 +1,5 @@
+{
+  "name": "f5-tts-benchmark",
+  "handler": "handler.handler",
+  "requirements": "requirements.txt"
+}
